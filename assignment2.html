@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <style>
+        h1,
+        div,
+        h2,
+        a {
+            margin: 0%;
+            padding: 0%;
+            border: 0%;
+            vertical-align: top;
+            text-decoration: none;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        #heading {
+            text-align: center;
+            font-family: sans-serif;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            display: inline-block;
+            border: 2px solid black;
+            margin: -5px -6px auto auto;
+            padding: 0px 20px;
+            float: right;
+        }
+
+        #chicken {
+            background-color: red;
+        }
+
+        #beef {
+            background-color: pink;
+        }
+
+        #sushi {
+            background-color: yellowgreen;
+        }
+
+        p {
+            display: block;
+            clear: both;
+        }
+
+        nav a {
+            width: 50%;
+            margin: 0% auto;
+            padding: 0% 25%;
+            display: block;
+            background: pink;
+            color: black;
+            border-bottom: 1px solid #000;
+        }
+
+        nav {
+            background: #f55f79;
+        }
+        
+        #nav {
+            display: none;
+        }
+
+        nav h1 {
+            padding: 1% 5%;
+        }
+
+        .columns {
+            max-width: 98%;
+            text-align: justify;
+            background-color: gray;
+            border: 2px solid black;
+            margin: 2px;
+            padding: 5px;
+            font-family: sans-serif;
+            display: inline-block;
+        }
+
+        @media screen and (min-width: 768px) {
+
+            #col1,
+            #col2 {
+                max-width: 47%;
+                text-align: justify;
+            }
+
+            #col3 {
+                max-width: 98%;
+            }
+
+            nav a {
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 992px) {
+
+            #col1,
+            #col2,
+            #col3 {
+                max-width: 31%;
+                text-align: justify;
+            }
+        }
+    </style>
+
+    <script>
+        function disappearmenu() {
+            var nav = document.getElementById("nav");
+            if(nav.style.display != "block"){
+                nav.style.display = "block";
+            }
+            else {
+                nav.style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <nav>
+        <h1 id="menubar" onclick="disappearmenu()">Food, LLC</h1>
+        <div id="nav">
+            <a href="#col1">Chicken</a>
+            <a href="#col2">Beef</a>
+            <a href="#col3">Sushi</a>
+        </div>
+    </nav>
+
+
+    <h2 id="heading">Our Menu
+    </h2>
+
+    <div id="col1" class="columns">
+        <h3 id="chicken">Chicken</h3>
+        <p>Chicken is the most common type of poultry in the world. Owinf to the relative ease and low cost of raising them inn comparison to animals such as cattle or hohs, chickens have become prevalent throughout the cuisine of cultures around the world, and their meat has beeen variously adapted to regional tastes.Chicken can be prepared in a vast range of ways, including baking, grilling, barbecuing, frying, and boiling, etc.Chicken is the most common type of poultry in the world. Owinf to the relative ease and low cost of raising them inn comparison to animals such as cattle or hohs, chickens have become prevalent throughout the cuisine of cultures around the world, and their meat has beeen variously adapted to regional tastes.Chicken can be prepared in a vast range of ways, including baking, grilling, barbecuing, frying, and boiling, etc.</p>
+    </div>
+
+    <div id="col2" class="columns">
+        <h3 id="beef">Beef</h3>
+        <p>Beef is the culinary name for meat from cattle, particularly skeletal muscle. Humans have been eating beef since prehistoric times Beef is a source of high-quality protein and nutrients. Most beef skeletal muscle meat can be used as is by merely cutting into certain parts, such as roasts, short ribs or steak (filet mignon, sirloin steak, rump steak, rib steak, rib eye steak, hanger steak, etc.), while other cuts are processed.Beef is the culinary name for meat from cattle, particularly skeletal muscle. Humans have been eating beef since prehistoric times Beef is a source of high-quality protein and nutrients. Most beef skeletal muscle meat can be used as is by merely cutting into certain parts, such as roasts, short ribs or steak (filet mignon, sirloin steak, rump steak, rib steak, rib eye steak, hanger steak, etc.), while other cuts are processed.</p>
+    </div>
+
+    <div id="col3" class="columns">
+        <h3 id="sushi">Sushi</h3>
+        <p>Sushi is traditionally made with medium-grain white rice, though it can be prepared with brown rice or short-grain rice. It is very often prepared with seafood, such as squid, eel, yellowtail, salmon, tuna or imitation crab meat. Many types of sushi are vegetarian. It is often served with pickled ginger (gari), wasabi, and soy sauce. Daikon radish or pickled daikon (takuan) are popular garnishes for the dish.ushi is traditionally made with medium-grain white rice, though it can be prepared with brown rice or short-grain rice. It is very often prepared with seafood, such as squid, eel, yellowtail, salmon, tuna or imitation crab meat. Many types of sushi are vegetarian. It is often served with pickled ginger (gari), wasabi, and soy sauce. Daikon radish or pickled daikon (takuan) are popular garnishes for the dish</p>
+    </div>
+
+</body></html>
