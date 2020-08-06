@@ -1,158 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 2</title>
-    <style>
-        h1,
-        div,
-        h2,
-        a {
-            margin: 0%;
-            padding: 0%;
-            border: 0%;
-            vertical-align: top;
-            text-decoration: none;
-        }
 
-        body {
-            text-align: center;
-        }
+<title>Menu</title>
 
-        #heading {
-            text-align: center;
-            font-family: sans-serif;
-            margin-bottom: 20px;
-        }
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-        h3 {
-            display: inline-block;
-            border: 2px solid black;
-            margin: -5px -6px auto auto;
-            padding: 0px 20px;
-            float: right;
-        }
+</head>
 
-        #chicken {
-            background-color: red;
-        }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+    .container-fluid{
+	margin: 0;
+	padding: 0;
+}
 
-        #beef {
-            background-color: pink;
-        }
+.navbar{
+	border-radius: 0px;
+	background-color: rgba(0,0,0,0.8);
+}
 
-        #sushi {
-            background-color: yellowgreen;
-        }
+.navbar-brand{
+  font-size: 35px;
+  color: white;
+  padding-left: 25px;
+}
 
-        p {
-            display: block;
-            clear: both;
-        }
+.navbar-brand:hover{
+	color: white;
+}
 
-        nav a {
-            width: 50%;
-            margin: 0% auto;
-            padding: 0% 25%;
-            display: block;
-            background: pink;
-            color: black;
-            border-bottom: 1px solid #000;
-        }
+.nav{
+	margin: 0;
+	padding: 0;
+}
 
-        nav {
-            background: #f55f79;
-        }
-        
-        #nav {
-            display: none;
-        }
+.navbar-nav{
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
 
-        nav h1 {
-            padding: 1% 5%;
-        }
+.navbar-toggle{
+	border: 2px solid white;
+	margin-right: 25px;
+}
 
-        .columns {
-            max-width: 98%;
-            text-align: justify;
-            background-color: gray;
-            border: 2px solid black;
-            margin: 2px;
-            padding: 5px;
-            font-family: sans-serif;
-            display: inline-block;
-        }
+.icon-bar{
+	background-color: white;
+}
 
-        @media screen and (min-width: 768px) {
 
-            #col1,
-            #col2 {
-                max-width: 47%;
-                text-align: justify;
-            }
+.main-title{
+  margin-bottom: 15px;
+  text-align: center;
+  color: #ff4532;
+  font-size: 50px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-weight: bold;
+}
 
-            #col3 {
-                max-width: 98%;
-            }
+li{
+	box-sizing: border-box;
+	width: 100%;
+}
 
-            nav a {
-                display: none;
-            }
-        }
+.menu-item{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	background-color: white;
+	border-bottom: 1px solid black;
+	color: black;
+	display: block;
+}
 
-        @media screen and (min-width: 992px) {
+.menu-item:hover{
+	background-color: rgba(0,0,0,0.9);
+	color: rgba(0,0,0,0.4);
+}
 
-            #col1,
-            #col2,
-            #col3 {
-                max-width: 31%;
-                text-align: justify;
-            }
-        }
+
+
+.row{
+	margin: 20px;
+}
+
+.content-box{
+	margin: 20px;
+	width: auto;
+	height: auto;
+	color: black;
+	background-color: rgba(0,0,0,0.2);
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	padding: 20px;
+}
+
+.item-name{
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#top{
+
+}
     </style>
 
-    <script>
-        function disappearmenu() {
-            var nav = document.getElementById("nav");
-            if(nav.style.display != "block"){
-                nav.style.display = "block";
-            }
-            else {
-                nav.style.display = "none";
-            }
-        }
-    </script>
-</head>
+
 
 <body>
 
-    <nav>
-        <h1 id="menubar" onclick="disappearmenu()">Food, LLC</h1>
-        <div id="nav">
-            <a href="#col1">Chicken</a>
-            <a href="#col2">Beef</a>
-            <a href="#col3">Sushi</a>
-        </div>
-    </nav>
 
+<nav class="navbar" id="top">
+  <div class="container-fluid">
 
-    <h2 id="heading">Our Menu
-    </h2>
-
-    <div id="col1" class="columns">
-        <h3 id="chicken">Chicken</h3>
-        <p>Chicken is the most common type of poultry in the world. Owinf to the relative ease and low cost of raising them inn comparison to animals such as cattle or hohs, chickens have become prevalent throughout the cuisine of cultures around the world, and their meat has beeen variously adapted to regional tastes.Chicken can be prepared in a vast range of ways, including baking, grilling, barbecuing, frying, and boiling, etc.Chicken is the most common type of poultry in the world. Owinf to the relative ease and low cost of raising them inn comparison to animals such as cattle or hohs, chickens have become prevalent throughout the cuisine of cultures around the world, and their meat has beeen variously adapted to regional tastes.Chicken can be prepared in a vast range of ways, including baking, grilling, barbecuing, frying, and boiling, etc.</p>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">Food, LLC</a>
     </div>
 
-    <div id="col2" class="columns">
-        <h3 id="beef">Beef</h3>
-        <p>Beef is the culinary name for meat from cattle, particularly skeletal muscle. Humans have been eating beef since prehistoric times Beef is a source of high-quality protein and nutrients. Most beef skeletal muscle meat can be used as is by merely cutting into certain parts, such as roasts, short ribs or steak (filet mignon, sirloin steak, rump steak, rib steak, rib eye steak, hanger steak, etc.), while other cuts are processed.Beef is the culinary name for meat from cattle, particularly skeletal muscle. Humans have been eating beef since prehistoric times Beef is a source of high-quality protein and nutrients. Most beef skeletal muscle meat can be used as is by merely cutting into certain parts, such as roasts, short ribs or steak (filet mignon, sirloin steak, rump steak, rib steak, rib eye steak, hanger steak, etc.), while other cuts are processed.</p>
+    <div class="collapse" id="myNavbar">
+      <ul class="nav navbar-nav visible-xs">
+        <li><a class="menu-item" href="#">Chicken</a></li>
+        <li><a class="menu-item" href="#">Beef</a></li> 
+        <li><a class="menu-item" href="#">Sushi</a></li> 
+      </ul>
     </div>
 
-    <div id="col3" class="columns">
-        <h3 id="sushi">Sushi</h3>
-        <p>Sushi is traditionally made with medium-grain white rice, though it can be prepared with brown rice or short-grain rice. It is very often prepared with seafood, such as squid, eel, yellowtail, salmon, tuna or imitation crab meat. Many types of sushi are vegetarian. It is often served with pickled ginger (gari), wasabi, and soy sauce. Daikon radish or pickled daikon (takuan) are popular garnishes for the dish.ushi is traditionally made with medium-grain white rice, though it can be prepared with brown rice or short-grain rice. It is very often prepared with seafood, such as squid, eel, yellowtail, salmon, tuna or imitation crab meat. Many types of sushi are vegetarian. It is often served with pickled ginger (gari), wasabi, and soy sauce. Daikon radish or pickled daikon (takuan) are popular garnishes for the dish</p>
-    </div>
+  </div>
+</nav>
 
-</body></html>
+<h1 class="main-title">Our Menu</h1>
+
+
+
+<div class="row">
+
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="content-box">
+      <p class="item-name">Chicken</p>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<a href="#top">(Back to Top)</a></p>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="content-box">
+      <p class="item-name">Beef</p>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<a href="#top">(Back to Top)</a></p>
+    </div>
+  </div>
+
+
+  <div class="col-lg-4 col-md-12 col-sm-12">
+    <div class="content-box">
+      <p class="item-name">Sushi</p>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<a href="#top">(Back to Top)</a></p>
+    </div>
+  </div>
+
+</div>
+
+
+</body>
+</html>
